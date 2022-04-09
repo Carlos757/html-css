@@ -1,0 +1,39 @@
+/* Selector General */
+*{
+    color: white;
+}
+p{
+    color:gray;
+    font-size: large;
+}
+a{
+    margin: 10px;
+}
+#parrafo1{
+    color: brown;
+}
+.background-gray{
+    background-color: gray;
+}
+.txt-color-orange{
+    color: orange;
+}
+.txt-color-white{
+    color: white;
+}
+.rounded{
+    border: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 10px;
+}
+/* Clases agrupadas */
+.background-gray.txt-color-white{
+    font-size: larger;
+    font-weight: bold;
+}
+/* Agrupar selectores */
+p, a {
+    font-weight: bold;
+}
