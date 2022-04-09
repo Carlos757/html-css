@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoelementos</title>
+
+    <style>
+        /* Pseudoelemntos. se aplica :: */
+        span{
+            font-size: large;
+        }
+
+        
+        span::before{
+            content: '$ ';
+            color: green;
+        }
+        span::after{
+            content: '.00';
+        }
+
+        /* Editar texto */
+        p::first-letter{
+            font-size: xx-large;
+        }
+        p::first-line{
+            color: gold;
+        }
+
+        /* Listas */
+        ul li::marker{
+            color: blueviolet;
+        }
+
+        /* Placeholder */
+        input::placeholder{
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+
+    <span>300</span>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit et sint unde iste porro corporis dolores veniam voluptas autem nostrum dicta, labore pariatur assumenda iusto magnam, ab, odio corrupti odit!Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, inventore suscipit autem fuga id ducimus itaque est voluptatibus laudantium tempore nisi sequi corporis, qui ex impedit deleniti, illum saepe vitae.</p>
+    <ul>
+        <li>Lorem, ipsum.</li>
+        <li>Lorem, ipsum.</li>
+        <li>Lorem, ipsum.</li>
+    </ul>
+    <input type="text" placeholder="Ingresa algo">
+</body>
+</html>

@@ -37,3 +37,16 @@ a{
 p, a {
     font-weight: bold;
 }
+/* Hijos directos especificos */
+.container > h1{
+    color: blue;
+}
+/* Slectores hermanos */
+.container2 ~ span{
+    color: red;
+}
+
+/* Hermano adyacente (solo 1) */
+.container2 + span{
+    color: green;
+}

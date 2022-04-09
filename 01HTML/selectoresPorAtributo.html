@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores Por Atributo</title>
+
+    <style>
+        /* Selector por atributo */
+        input[type="number"]{
+            border-style: dashed;
+            border-radius: 5px;
+            border-color: blue;
+        }
+        input[type = "email"]::placeholder{
+            color: blue;
+        }
+
+        /* Que sea especifico */
+        a[href = "https://www.apple.com"]{
+            color: rgb(255, 179, 0);
+        }
+        
+        /* Que contangan una palabra */
+        a[href *= "google.com"]{
+            color: rgb(0, 255, 51);
+        }
+        /* Que comience con una palabra*/
+        a[href ^= "www"]{
+            color: rgb(209, 24, 215);
+        }
+        /* Que termine con una palabra*/
+        a[href $= "pdf"]{
+            color: rgb(215, 24, 24);
+        }
+        
+    </style>
+</head>
+<body>
+    <input type="text" placeholder="Ingresa algo">
+    <input type="email" placeholder="Ingresa algo">
+    <input type="text" placeholder="Ingresa algo">
+    <input type="number" placeholder="Ingresa algo">
+    <input type="text" placeholder="Ingresa algo">
+
+    <a href="https://www.google.com">Google</a>
+    <a href="https://drive.google.com">Drive</a>
+    <a href="https://www.facebook.com">Facebook</a>
+    <a href="https://www.apple.com">apple</a>
+    <a href="www.youtube.com">Youtube</a>
+    <a href="archivo.pdf">PDF</a>
+</body>
+</html>

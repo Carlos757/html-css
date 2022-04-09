@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidades de medida flexibles</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }      
+        /* ViewPort : se adapta al tamano del viewport, es decir de la pantalla */
+        .container__title{
+            color: white;
+            /* En pantallas chicas ya no se hace mas chico */
+            font-size: 5vmax;
+            /* En pantallas grandes ya no crece mas */
+            font-size: 5vmin;
+        }
+        .container{ 
+            background-color: black;
+
+            width: 50vw;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="container__title">Hola</h1>
+    </div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+
+    <style>
+        /* variable */
+        :root{
+            --color-primary: #193ef5;
+            --color-secondary: #ff9800;
+            --color-tertiary: #ff5722;
+            --color-quaternary: #9c27b0;
+            --color-danger: #f44336;
+            --color-warning: #ffeb3b;
+            --color-success: #4caf50;
+            --color-info: #2196f3;
+        }
+
+        .container > div{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .header{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            height: 50px;
+            background-color: var(--color-primary);
+        }
+        .header > div{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+        }
+        .header > div > a{
+            color: white;
+            text-decoration: none;
+        }
+        .header > div > a:hover{
+            text-decoration: underline;
+        }
+        .header > div > a:active{
+            text-decoration: underline;
+        }
+        .header > div > a:visited{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div>
+                <a href="#">Home</a>
+            </div>
+            <div>
+                <a href="#">About</a>
+            </div>
+            <div>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, cum, a tenetur ex autem, voluptates laudantium aperiam fugit unde minima similique blanditiis delectus aspernatur assumenda dolores excepturi est iure! Ex?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, cum, a tenetur ex autem, voluptates laudantium aperiam fugit unde minima similique blanditiis delectus aspernatur assumenda dolores excepturi est iure! Ex?</p>
+        </div>
+    </div>
+</body>
+</html>

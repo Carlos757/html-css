@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEM</title>
+
+    <style>
+
+        /* BEM 
+
+            B = Block       .block
+            E = Element     .block__element
+            M = Modifier    .block-modifier
+        
+        */
+
+        body{
+            max-width: 1200px;
+            max-height: auto;
+        }
+
+
+        .container{
+            width: 300px;
+            background-color: beige;
+            padding: 10px;
+            margin: 5px 0px;
+        }
+        .container__btn{
+            border-style: solid;
+            border-radius: 10px;
+            padding: 5px 20px;
+            background-color: aliceblue;
+        }
+        .btn--bgred{
+            background-color: red;
+        }
+        .container--bgred{
+            background-color: red;
+        }
+        /* .container__button:hover{
+            background-color: rgb(212, 232, 249);
+        } */
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, dolor. Inventore id rerum ratione iste est quasi quo facere accusantium illum cumque autem culpa, quae excepturi dolorum, recusandae sit velit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, dolor. Inventore id rerum ratione iste est quasi quo facere accusantium illum cumque autem culpa, quae excepturi dolorum, recusandae sit velit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, dolor. Inventore id rerum ratione iste est quasi quo facere accusantium illum cumque autem culpa, quae excepturi dolorum, recusandae sit velit.</p>
+        <button class="container__btn">Presionar</button>
+    </div>
+    <div class="container container--bgred">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, dolor. Inventore id rerum ratione iste est quasi quo facere accusantium illum cumque autem culpa, quae excepturi dolorum, recusandae sit velit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, dolor. Inventore id rerum ratione iste est quasi quo facere accusantium illum cumque autem culpa, quae excepturi dolorum, recusandae sit velit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, dolor. Inventore id rerum ratione iste est quasi quo facere accusantium illum cumque autem culpa, quae excepturi dolorum, recusandae sit velit.</p>
+        <button class="container__btn">Presionar</button>
+    </div>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, dolor. Inventore id rerum ratione iste est quasi quo facere accusantium illum cumque autem culpa, quae excepturi dolorum, recusandae sit velit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, dolor. Inventore id rerum ratione iste est quasi quo facere accusantium illum cumque autem culpa, quae excepturi dolorum, recusandae sit velit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, dolor. Inventore id rerum ratione iste est quasi quo facere accusantium illum cumque autem culpa, quae excepturi dolorum, recusandae sit velit.</p>
+        <button class="container__btn btn--bgred">Presionar</button>
+    </div>
+    
+</body>
+</html>
