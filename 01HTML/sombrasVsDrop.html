@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sombras vs Drop Shadow</title>
+
+    <link rel="stylesheet" href="./fontawesome/css/all.css" />
+
+    <style>
+      :root {
+        --img: url(https://www.xtrafondos.com/wallpapers/diseno-de-paisaje-del-espacio-5771.jpg);
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        width: 100vw;
+        height: 100vh;
+      }
+      .logo1{
+          padding: 30px;
+          font-size: 200px; 
+          
+          box-shadow: 0 0 10px 0 red;
+        }
+        .logo2{
+          padding: 30px;
+          font-size: 200px; 
+          
+          filter: drop-shadow(0 0 5px red);
+      }
+      .logo2:hover{
+          padding: 30px;
+          font-size: 200px; 
+          
+          filter: drop-shadow(0 0 20px gold);
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="" class="logo1 fa-brands fa-apple fa-flip" ></img>
+      <img src="" class="logo2 fa-brands fa-apple fa-fade" ></img>
+      <img src="" class="logo2 fa-solid fa-bell fa-shake" ></img>
+    </div>
+  </body>
+</html>

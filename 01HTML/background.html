@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backgrounds</title>
+
+    <style>
+        :root{
+            --img: url(https://png.pngtree.com/background/20210712/original/pngtree-abstract-modern-neon-frame-background-picture-image_1178251.jpg);
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            max-width: 1200px;
+            height: 500px;
+            margin: auto;
+
+            border: 1px solid blue;
+
+            /* Fondo plano */
+            background: green;
+
+            /* gradientes */
+            background: linear-gradient(90deg, blue, orange);
+            background: radial-gradient(blue, orange, green);
+
+            /* imagen */
+            /* background-image: var(--img);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed; */
+
+            background: var(--img) no-repeat scroll center;
+            background-size: contain;
+        }
+        .img-container{
+            width: 500px;
+            height: 500px;
+            border: 10px solid rgb(55, 0, 255);
+            border-radius: 1000px;
+        }
+        .img{
+            width: inherit;
+            height: inherit;
+            object-fit: cover;
+            object-position: left center;
+            border-radius: inherit;
+            filter: contrast(150%);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    </div>
+    <div class="img-container">
+        <img class="img" src="https://www.xtrafondos.com/wallpapers/diseno-de-paisaje-del-espacio-5771.jpg" alt="">
+    </div>
+</body>
+</html>

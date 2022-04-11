@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax</title>
+
+    <style>
+        :root{
+            --img1: url(https://www.xtrafondos.com/wallpapers/hoyo-negro-alrededor-de-asteroides-y-planetas-6608.jpg);
+            --img2: url(https://www.xtrafondos.com/wallpapers/montanas-con-planeta-de-fondo-neblina-7754.jpg);
+            --img3: url(https://www.xtrafondos.com/wallpapers/planeta-con-anillo-y-luna-6831.jpg);
+            --img4: url(https://www.xtrafondos.com/wallpapers/diseno-de-paisaje-del-espacio-5771.jpg);
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .sec{
+            width: 100vw;
+            height: 100vh;
+            padding: 10px 0;
+            margin-bottom: 50px;
+
+            /* background: var(--img1), var(--img2) no-repeat fixed center;
+            background-size: cover;
+
+            background-blend-mode: lighten; */
+        }
+        .sec:nth-child(4){
+            margin: 0;
+        }
+        .sec1{
+            background: var(--img2) no-repeat fixed center;
+            background-size: cover;
+        }
+        .sec2{
+            background: var(--img1) no-repeat fixed center;
+            background-size: cover;
+        }
+        .sec3{
+            background: var(--img3) no-repeat fixed center;
+            background-size: cover;
+        }
+        .sec4{
+            background: var(--img4) no-repeat fixed center;
+            background-size: cover;
+        }
+
+
+    </style>
+</head>
+<body>
+    <section class="sec sec1"></section>
+    <section class="sec sec2"></section>
+    <section class="sec sec3"></section>
+    <section class="sec sec4"></section>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Blend Mode</title>
+
+    <style>
+        :root{
+            --img1: url(https://www.xtrafondos.com/wallpapers/humo-de-colores-neon-9588.jpg);
+            --img2: url(https://www.xtrafondos.com/wallpapers/montanas-neblina-nubes-7745.jpg);
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+
+            background: var(--img2), var(--img1),white no-repeat fixed center;
+            background-size: cover;
+
+            /* blend mode: combina imagenes */
+            background-blend-mode: multiply;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    </div>
+</body>
+</html>

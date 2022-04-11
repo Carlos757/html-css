@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mix Blend Mode</title>
+
+    <style>
+        :root{
+            --img1: url(https://www.xtrafondos.com/wallpapers/humo-de-colores-neon-9588.jpg);
+            --img2: url(https://www.xtrafondos.com/wallpapers/montanas-neblina-nubes-7745.jpg);
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+
+            background: var(--img2), var(--img1) no-repeat fixed center;
+            background-size: cover;
+
+            background-blend-mode: lighten;
+
+        }
+        .title{
+            font-size: 80px;
+            line-height: 100vh;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            text-transform: uppercase;
+
+            /* mix blend mode: combina elementos con el fondo */
+            mix-blend-mode: overlay;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Binvenido</h1>
+    </div>
+</body>
+</html>

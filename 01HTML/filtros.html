@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtros</title>
+
+    <style>
+        :root{
+            --img: url(https://png.pngtree.com/background/20210712/original/pngtree-abstract-modern-neon-frame-background-picture-image_1178251.jpg);
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .img{
+            width: calc(100vw - 200px);
+            height: calc(100vh - 200px);;
+            object-fit: contain;
+            object-position: center center;
+            border-radius: inherit;
+
+            padding: 100px;
+
+            filter: contrast(150%);
+            filter: grayscale(80%);
+            filter: blur(5px);
+            filter: brightness(50%);
+            filter: opacity(50%);
+            filter: hue-rotate(90deg);
+            filter: sepia(60%);
+            filter: invert(10%);
+            filter: drop-shadow(10px 10px 20px black);
+        }
+    </style>
+</head>
+<body>
+    <img class="img" src="https://www.xtrafondos.com/wallpapers/diseno-de-paisaje-del-espacio-5771.jpg" alt="">
+</body>
+</html>
