@@ -1,0 +1,233 @@
+:root {
+    --primary-color: #222831;
+    --secondary-color: #393e46;
+    --accent-color: #018990;
+    --clear-color: #eeeeee;
+    --danger-color: #ff3860;
+    --info-color: #e9e202;
+
+    --img1: url(https://www.xtrafondos.com/wallpapers/hoyo-negro-alrededor-de-asteroides-y-planetas-6608.jpg);
+    --img2: url(https://www.xtrafondos.com/wallpapers/montanas-con-planeta-de-fondo-neblina-7754.jpg);
+    --img3: url(https://www.xtrafondos.com/wallpapers/planeta-con-anillo-y-luna-6831.jpg);
+    --img4: url(https://www.xtrafondos.com/wallpapers/diseno-de-paisaje-del-espacio-5771.jpg);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: auto;
+    max-width: 700px;
+    font-family: "Noto Sans", -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+        "Helvetica Neue", sans-serif;
+}
+
+.logo {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card {
+    border: 1px solid var(--clear-color);
+    border-radius: 20px;
+    width: 50%;
+}
+
+.card-img {
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.btn {
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid;
+    padding: 0.4em;
+    /* font-size: 1.3rem; */
+}
+
+.btn:hover {
+    box-shadow: 0 0 5px black;
+}
+
+.x-small {
+    font-size: x-small;
+}
+
+.small {
+    font-size: small;
+}
+
+.medium {
+    font-size: medium;
+}
+
+.large {
+    font-size: large;
+}
+
+.x-large {
+    font-size: x-large;
+}
+
+/* Colores */
+.bg-primary {
+    background-color: var(--primary-color);
+}
+
+.text-color-primary {
+    color: var(--primary-color);
+}
+
+.bg-secondary {
+    background-color: var(--secondary-color);
+}
+
+.text-color-secondary {
+    color: var(--secondary-color);
+}
+
+.bg-accent {
+    background-color: var(--accent-color);
+}
+
+.text-color-accent {
+    color: var(--accent-color);
+}
+
+.bg-clear {
+    background-color: var(--clear-color);
+}
+
+.text-color-clear {
+    color: var(--clear-color);
+}
+
+.bg-info {
+    background-color: var(--info-color);
+}
+
+.bg-danger {
+    background-color: var(--danger-color);
+}
+
+/* General */
+.d-block {
+    display: block;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-start {
+    text-align: start;
+}
+
+.text-end {
+    text-align: end;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.m-10 {
+    margin: 10px;
+}
+
+.my-10 {
+    margin: 10px 0;
+}
+
+.mx-10 {
+    margin: 0 10px;
+}
+
+.my-5 {
+    margin: 5px 0;
+}
+
+.mx-5 {
+    margin: 0 5px;
+}
+
+.m-2 {
+    margin: 2px;
+}
+
+.my-2 {
+    margin: 2px 0;
+}
+
+.mx-2 {
+    margin: 0 2px;
+}
+
+.p-10 {
+    padding: 10px;
+}
+
+.py-10 {
+    padding: 10px 0;
+}
+
+.px-10 {
+    padding: 0 10px;
+}
+
+.py-5 {
+    padding: 5px 0;
+}
+
+.px-5 {
+    padding: 0 5px;
+}
+
+.p-2 {
+    padding: 2px;
+}
+
+.py-2 {
+    padding: 2px 0;
+}
+
+.px-2 {
+    padding: 0 2px;
+}
+
+.p-30 {
+    padding: 30px;
+}
+
+.py-30 {
+    padding: 30px 0;
+}
+
+.px-30 {
+    padding: 0 30px;
+}
+
+.m-30 {
+    margin: 30px;
+}
+
+.my-30 {
+    margin: 30px 0;
+}
+
+.mx-30 {
+    margin: 0 30px;
+}
