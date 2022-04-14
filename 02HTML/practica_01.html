@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bienvenido</title>
+
+        <style>
+            :root {
+                --primary-color: #222831;
+                --secondary-color: #393e46;
+                --accent-color: #00adb5;
+                --clear-color: #eeeeee;
+            }
+
+            * {
+                margin: 0;
+                padding: 0;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            body {
+                max-width: 1200px;
+                margin: auto;
+                background-color: var(--primary-color);
+            }
+
+            .container {
+                padding: 50px;
+                width: calc(10vw-100px);
+                height: calc(100vh-100px);
+            }
+
+            .header {
+                padding: 30px;
+                margin: auto;
+
+                border: 5px solid var(--secundary-color);
+                border-radius: 10px;
+            }
+
+            .title {
+                margin: auto;
+                font-size: 4rem;
+            }
+
+            .subtitle {
+                margin: auto;
+                font-size: 2.5rem;
+                text-transform: capitalize;
+            }
+
+            .nav {
+                margin: auto;
+                padding: 30px;
+            }
+            li {
+                display: inline-flex;
+                margin: 0 20px;
+            }
+            .footer {
+                font-size: 1.4em;
+                position: sticky;
+            }
+
+            .btn {
+                text-decoration: none;
+                border: 2px solid var(--clear-color);
+                border-radius: 5px;
+                padding: 10px 30px;
+
+                font-size: 1.2em;
+            }
+
+            .bg-primary {
+                background-color: var(--primary-color);
+            }
+
+            .text-color-primary {
+                color: var(--primary-color);
+            }
+
+            .bg-secondary {
+                background-color: var(--secondary-color);
+            }
+
+            .text-color-secondary {
+                color: var(--secondary-color);
+            }
+
+            .bg-accent {
+                background-color: var(--accent-color);
+            }
+
+            .text-color-accent {
+                color: var(--accent-color);
+            }
+
+            .bg-clear {
+                background-color: var(--clear-color);
+            }
+
+            .text-color-clear {
+                color: var(--clear-color);
+            }
+
+            .text-center {
+                text-align: center;
+            }
+            .text-justify {
+                text-align: justify;
+            }
+
+            .m-10 {
+                margin: 10px;
+            }
+            .my-10 {
+                margin: 10px 0;
+            }
+            .mx-10 {
+                margin: 0 10px;
+            }
+            .my-5 {
+                margin: 5px 0;
+            }
+            .mx-5 {
+                margin: 0 5px;
+            }
+            .m-2 {
+                margin: 2px;
+            }
+            .my-2 {
+                margin: 2px 0;
+            }
+            .mx-2 {
+                margin: 0 2px;
+            }
+
+            .p-10 {
+                padding: 10px;
+            }
+            .py-10 {
+                padding: 10px 0;
+            }
+            .px-10 {
+                padding: 0 10px;
+            }
+            .py-5 {
+                padding: 5px 0;
+            }
+            .px-5 {
+                padding: 0 5px;
+            }
+            .p-2 {
+                padding: 2px;
+            }
+            .py-2 {
+                padding: 2px 0;
+            }
+            .px-2 {
+                padding: 0 2px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container bg-primary">
+            <header class="header bg-accent">
+                <h1 class="title text-color-clear text-center">
+                    Mi primera practica de css
+                </h1>
+                <hr class="m-10" />
+                <p class="subtitle text-center text-color-secondary">
+                    Lorem ipsum dolor sit amet.
+                </p>
+            </header>
+
+            <nav class="nav text-center">
+                <ul>
+                    <li>
+                        <a
+                            class="btn bg-accent text-color-clear text-center"
+                            href=" https://www.google.com"
+                            >Inicio
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            class="btn bg-accent text-color-clear text-center"
+                            href="https://www.google.com"
+                            >Servicios</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            class="btn bg-accent text-color-clear text-center"
+                            href="https://www.google.com"
+                            >Nosotros</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            class="btn bg-accent text-color-clear text-center"
+                            href="https://www.google.com"
+                            >Blog</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            class="btn bg-accent text-color-clear text-center"
+                            href="https://www.google.com"
+                            >Contacto</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+            <article class="">
+                <table class="">
+                    <thead class="">
+                        <tr class="text-center bg-clear">
+                            <th>
+                                <h1 class="text-color-secondary py-10">
+                                    Lorem, ipsum dolor.
+                                </h1>
+                            </th>
+                            <th>
+                                <h1 class="text-color-secondary py-10">
+                                    Lorem, ipsum dolor.
+                                </h1>
+                            </th>
+                            <th>
+                                <h1 class="text-color-secondary py-10">
+                                    Lorem, ipsum dolor.
+                                </h1>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="text-center bg-clear">
+                            <td>
+                                <p
+                                    class="text-color-secondary text-justify p-10"
+                                >
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Enim nulla impedit eveniet
+                                    consequatur libero quo, ullam omnis
+                                    exercitationem vitae earum soluta voluptates
+                                    voluptatem laudantium unde quam, cumque id
+                                    sequi iure. Lorem ipsum dolor sit amet
+                                    consectetur adipisicing elit. Veniam
+                                    pariatur qui libero. Veritatis sit sequi
+                                    voluptatum harum tempore! Aliquam, excepturi
+                                    qui odio eius suscipit reiciendis dolor
+                                    officiis autem similique soluta?
+                                </p>
+                            </td>
+                            <td>
+                                <p
+                                    class="text-color-secondary text-justify p-10"
+                                >
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Enim nulla impedit eveniet
+                                    consequatur libero quo, ullam omnis
+                                    exercitationem vitae earum soluta voluptates
+                                    voluptatem laudantium unde quam, cumque id
+                                    sequi iure. Lorem ipsum dolor sit amet
+                                    consectetur adipisicing elit. Sit possimus
+                                    tempore autem distinctio illum atque sunt
+                                    consequatur provident in amet voluptas
+                                    aspernatur minima voluptate culpa, explicabo
+                                    fuga corrupti ea. Obcaecati?
+                                </p>
+                            </td>
+                            <td>
+                                <p
+                                    class="text-color-secondary text-justify p-10"
+                                >
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Enim nulla impedit eveniet
+                                    consequatur libero quo, ullam omnis
+                                    exercitationem vitae earum soluta voluptates
+                                    voluptatem laudantium unde quam, cumque id
+                                    sequi iure. Lorem ipsum dolor sit, amet
+                                    consectetur adipisicing elit. Nesciunt
+                                    magnam temporibus veritatis officia sed
+                                    voluptatibus dolore accusamus aliquam ex.
+                                    Explicabo, recusandae praesentium! Est
+                                    ducimus odio veritatis, qui minima harum
+                                    nesciunt.
+                                </p>
+                            </td>
+                        </tr>
+                        <tr class="text-center bg-clear">
+                            <td>
+                                <button
+                                    class="btn bg-accent text-color-clear text-center my-10"
+                                >
+                                    Mas información
+                                </button>
+                            </td>
+                            <td>
+                                <button
+                                    class="btn bg-accent text-color-clear text-center my-10"
+                                >
+                                    Mas información
+                                </button>
+                            </td>
+                            <td>
+                                <button
+                                    class="btn bg-accent text-color-clear text-center my-10"
+                                >
+                                    Mas información
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+            <footer
+                class="footer bg-accent text-center text-color-clear p-5 my-10"
+            >
+                Todos los derechos reservados
+            </footer>
+        </div>
+    </body>
+</html>

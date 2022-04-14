@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+
+    <style>
+        body {
+            background
+        }
+    </style>
+</head>
+
+<body>
+    <table border="2">
+        <!-- Titulo -->
+        <caption>Paises</caption>
+        <!-- Encabezado -->
+        <thead>
+            <tr>
+                <th>Asia</th>
+                <th>Europa</th>
+                <th>America</th>
+                <th>Otro</th>
+            </tr>
+        </thead>
+        <!-- Filas -->
+        <tbody>
+            <tr>
+                <td rowspan="2">Fila 1</td>
+                <td>Fila 2</td>
+                <td colspan="2">Fila 3 y 4</td>
+            </tr>
+
+            <!-- Columnas -->
+            <tr>
+                <td>Columna 2</td>
+                <td>Columna 3</td>
+                <td>Columna 4</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <form action="POST">
+        <label for="name">Nombre: </label>
+        <input name="name" id="name" type="text" placeholder="Ingresa el nombre">
+        <br>
+        <label for="lastname">Apellido: </label>
+        <input name="lastname" id="lastname" type="text" placeholder="Ingresa el apellido">
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <hr>
+    <input type="color">
+</body>
+
+</html>
