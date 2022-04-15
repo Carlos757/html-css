@@ -7,13 +7,64 @@
         <title>Flexbox</title>
 
         <link rel="stylesheet" href="./../normalize.css" />
-        <link rel="stylesheet" href="./style.css" />
+        <link rel="stylesheet" href="./flex_01.css" />
     </head>
     <body class="container">
         <div class="border flex-container">
-            <div class="item">Item 1</div>
-            <div class="item">Item 2</div>
-            <div class="item">Item 3</div>
+            <div class="item flex-basis-1">
+                <h1>Item 1</h1>
+                <p>Lorem ipsum</p>
+            </div>
+            <div class="item order-1 flex-shrink-0">
+                <h1>Item 2</h1>
+                <p>Lorem ipsum dolor sit</p>
+            </div>
+            <div class="item order-2">
+                <h1>Item 3</h1>
+                <p>Lorem ipsum dolor sit amet</p>
+            </div>
+            <div class="item order-3">
+                <h1>Item 4</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+
+        <div class="border flex-container">
+            <div class="item flex-2">
+                <h1>Item 1</h1>
+                <p>Lorem ipsum</p>
+            </div>
+            <div class="item flex-2">
+                <h1>Item 2</h1>
+                <p>Lorem ipsum dolor sit</p>
+            </div>
+            <div class="item flex-2">
+                <h1>Item 3</h1>
+                <p>Lorem ipsum dolor sit amet</p>
+            </div>
+            <div class="item flex-2">
+                <h1>Item 4</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+
+        <div class="border flex-container">
+            <div class="item h-700">
+                <h1>Item 1</h1>
+                <p>Lorem ipsum</p>
+            </div>
+            <div class="item align-self-start">
+                <h1>Item 2</h1>
+                <p>Lorem ipsum dolor sit</p>
+            </div>
+            <div class="item align-self-bottom">
+                <h1>Item 3</h1>
+                <p>Lorem ipsum dolor sit amet</p>
+            </div>
+            <div class="item">
+                <h1>Item 4</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
         </div>
     </body>
 </html>

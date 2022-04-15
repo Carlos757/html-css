@@ -1,0 +1,76 @@
+.container{
+    width: 90%;
+    margin: 1rem auto;
+}
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* Alinea los elementos de forma horizontal (X)*/
+    justify-content: center;
+    /* Alinea los elementos de acuerdo a la altura del padre */
+    align-items: center;
+    /* Alinea los elementos de forma vertical (Y) */
+    /* align-content: center; */
+}
+.border{
+    border: 2px solid black;
+    margin: 10px 0;
+    background-color: black;
+}
+.order-1{
+    order: 1;
+}
+.order-2{
+    order: 2;
+}
+.order-3{
+    order: 3;
+}
+
+.h-full{
+    height: calc(100vh - 1rem);
+}
+.h-700{
+    height: 700px;
+}
+.h-300{
+    height: 300px;
+}
+.item{
+    background-color: peru;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    /* Los items trataran de ocupar el %100 del ancho disponible */
+    flex-grow: 1;
+    /* width: 200px; */
+}
+/* Permite que crecer pero no puede decrecer menos del width que se marque aunque se desborde */
+.flex-shrink-0{
+    width: 300px;
+    flex-shrink: 0;
+}
+/* Trata de abarcar el porcentaje de pantalla que le indiquemos */
+.flex-basis-1{
+    flex-basis: 100%;
+}
+
+/* Manera resumida de utilizar flex grow */
+.flex-1{
+    flex: 1;
+}
+
+/* Manera resumida de utilizar flex grow, shrink y basis */
+.flex-2 {
+    flex: 1 0 200px;
+}
+
+.align-self-start{
+    align-self: flex-start;
+}
+.align-self-bottom{
+    align-self: flex-end;
+}
