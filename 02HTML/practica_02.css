@@ -11,19 +11,36 @@
     --img3: url(https://www.xtrafondos.com/wallpapers/planeta-con-anillo-y-luna-6831.jpg);
     --img4: url(https://www.xtrafondos.com/wallpapers/diseno-de-paisaje-del-espacio-5771.jpg);
 }
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
 
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
 body {
     margin: auto;
-    max-width: 700px;
+    max-width: 600px;
     font-family: "Noto Sans", -apple-system, BlinkMacSystemFont,
         "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
         "Helvetica Neue", sans-serif;
+    background: var(--img4) fixed no-repeat center;
+    background-size: cover;
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 95%; */
+    max-width: inherit;
+    /* background-color: aqua; */
 }
 
 .logo {
@@ -31,12 +48,22 @@ body {
     height: 200px;
     object-fit: cover;
     object-position: center;
+    border-radius: 0 0 15px 15px;
 }
 
 .card {
-    border: 1px solid var(--clear-color);
+    /* border: 1px solid var(--clear-color); */
     border-radius: 20px;
     width: 50%;
+    background-color: var(--accent-color);
+    color: var(--clear-color);
+}
+.card-title{
+    text-align: center;
+    padding-bottom: 10px;
+}
+.card-body {
+    padding: 20px;
 }
 
 .card-img {
@@ -48,9 +75,12 @@ body {
 
 .btn {
     text-decoration: none;
-    border-radius: 5px;
-    border: 1px solid;
-    padding: 0.4em;
+    display: inline-block;
+    font-size: 1rem;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    margin: 0 0.1em;
+    text-align: center;
     /* font-size: 1.3rem; */
 }
 
@@ -148,6 +178,12 @@ body {
     margin: 10px;
 }
 
+.mt-10 {
+    margin-top: 10px;
+}
+.mb-10 {
+    margin-bottom: 10px;
+}
 .my-10 {
     margin: 10px 0;
 }

@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Practica 2</title>
 
+        <link rel="stylesheet" href="./normalize.css" />
         <link rel="stylesheet" href="./practica_02.css" />
         <link
             href="https://fonts.googleapis.com/css?family=Noto+Sans:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
@@ -13,34 +14,31 @@
         />
     </head>
     <body>
-        <header>
-            <a class="d-block" href="#"
+        <header class="container">
+            <a href="#"
                 ><img
                     class="logo"
-                    src="https://www.xtrafondos.com/wallpapers/hoyo-negro-alrededor-de-asteroides-y-planetas-6608.jpg"
-                    alt="Logo"
+                    src="https://www.xtrafondos.com/wallpapers/montanas-con-planeta-de-fondo-neblina-7754.jpg"
             /></a>
         </header>
 
-        <nav class="my-30 large">
+        <nav class="container my-30 large">
             <a href="#" class="btn bg-primary text-color-clear">Primary</a>
             <a href="#" class="btn bg-accent text-color-clear">Secondary</a>
             <a href="#" class="btn bg-danger text-color-clear">Danger</a>
             <a href="#" class="btn bg-info">Info</a>
         </nav>
 
-        <section class="my-30">
-            <article class="card bg-accent text-color-clear text-center">
+        <section class="container my-30">
+            <article class="card">
                 <img
                     class="card-img"
-                    src="https://www.xtrafondos.com/wallpapers/montanas-con-planeta-de-fondo-neblina-7754.jpg"
+                    src="https://www.xtrafondos.com/wallpapers/hoyo-negro-alrededor-de-asteroides-y-planetas-6608.jpg"
                     alt="Imagen de prueba"
                 />
-                <div class="text-start">
-                    <h4 class="py-10 x-large text-center">
-                        Lorem ipsum dolor.
-                    </h4>
-                    <p class="text-justify p-10">
+                <div class="card-body">
+                    <h4 class="card-title x-large">Lorem ipsum dolor.</h4>
+                    <p class="">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Porro quaerat nesciunt neque, ut earum eos blanditiis in
                         sed, alias delectus temporibus necessitatibus provident
@@ -48,7 +46,7 @@
                     </p>
                     <a
                         href="#"
-                        class="btn bg-secondary text-color-clear d-inline-block m-10"
+                        class="btn bg-secondary text-color-clear d-block mt-10"
                         >Google</a
                     >
                 </div>
