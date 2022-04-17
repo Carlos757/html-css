@@ -3,3 +3,27 @@
         height: 100vh;
     }
 }
+body{
+    background: radial-gradient(#d0edf7, #aeebff, #8fc1fffb, #75b0fc);
+}
+.title{
+    font-size: 50px;
+    color: rgb(0, 132, 255);
+}
+.contenedor{
+    transition: transform .2s;
+    border-radius: 25px !important;
+    border: 3px ridge rgba(149, 149, 149, 0.9) !important;
+}
+.contenedor:hover{
+    transform: scale(1.1);
+    border: 3px ridge rgb(11, 151, 193) !important;
+    background:linear-gradient(to right, #0058b0, #3da4c9) !important;
+    color: white;
+    box-shadow: 0px 0px 10px rgb(11, 151, 193) !important;
+}
+.boton{
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background: linear-gradient(to top, #016bd5, #45b5de);
+}
